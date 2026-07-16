@@ -1,0 +1,381 @@
+/*=================================================
+        TESTIMONIOS + FAQ + UBICACIÓN
+=================================================*/
+
+.community-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.community-section .container {
+  width: min(1320px, 92%);
+  margin: auto;
+}
+
+/*==========================
+        TITULO
+===========================*/
+
+.testimonial-header {
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.testimonial-header h2 {
+  text-align: center;
+  color: #172d5c;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/*=========================================
+        FLECHAS SLIDER PREMIUM
+=========================================*/
+
+.slider-arrow {
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #172d5c;
+  font-size: 20px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12),
+    inset 0 1px rgba(255, 255, 255, 0.8);
+
+  transition: 0.35s ease;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* brillo */
+
+.slider-arrow::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45), transparent);
+
+  opacity: 0;
+
+  transition: 0.35s;
+}
+
+/* Hover */
+
+.slider-arrow:hover {
+  transform: translateY(-5px) scale(1.08);
+
+  background: linear-gradient(135deg, #315efb, #6f4cff);
+
+  color: #fff;
+
+  box-shadow: 0 22px 45px rgba(49, 94, 251, 0.35);
+}
+
+.slider-arrow:hover::before {
+  opacity: 1;
+}
+
+/* Click */
+
+.slider-arrow:active {
+  transform: scale(0.95);
+}
+
+/* Icono */
+
+.slider-arrow i {
+  transition: 0.35s;
+}
+
+.slider-arrow:hover i {
+  transform: scale(1.15);
+}
+
+/*==========================
+      TESTIMONIOS
+===========================*/
+
+.testimonial-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonial-track {
+  display: flex;
+  gap: 22px;
+  transition: 0.6s ease;
+}
+
+.testimonial-card {
+  flex: 0 0 calc((100% - 44px) / 3);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.12);
+}
+
+.stars {
+  color: #ffbf00;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.testimonial-card p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user h4 {
+  color: #172d5c;
+  margin-bottom: 4px;
+  font-size: 17px;
+}
+
+.user span {
+  color: #777;
+  font-size: 14px;
+}
+
+/*==========================
+          FAQ
+===========================*/
+
+.faq-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.faq-left h2 {
+  font-size: 2rem;
+  color: #172d5c;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+}
+
+.faq-question {
+  width: 100%;
+  background: #fff;
+  border: none;
+  padding: 20px 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #172d5c;
+}
+
+.faq-question i {
+  transition: 0.3s;
+}
+
+.faq-item.active i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.35s;
+  color: #666;
+  line-height: 1.8;
+  padding: 0 25px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 220px;
+  padding: 0 25px 20px;
+}
+
+/*==========================
+        IMAGEN FAQ
+===========================*/
+
+.faq-image {
+  display: flex;
+  justify-content: center;
+}
+
+.faq-image img {
+  width: 100%;
+  max-width: 430px;
+  animation: flotar 4s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*==========================
+        UBICACION
+===========================*/
+
+.location {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+.location-info {
+  background: #fff;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #edf0f5;
+}
+
+.location-info h2 {
+  color: #172d5c;
+  margin-bottom: 18px;
+}
+
+.location-info p {
+  color: #666;
+  line-height: 1.9;
+}
+
+.btn-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  background: linear-gradient(90deg, #5d3dfc, #315efb);
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn-location:hover {
+  transform: translateY(-4px);
+}
+
+.map {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #edf0f5;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border: none;
+}
+/*==============================
+ANIMACIONES
+==============================*/
+
+.hidden {
+  opacity: 0;
+
+  transform: translateY(40px);
+
+  transition: 0.8s;
+}
+
+.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.testimonial-slider {
+  transition: 0.5s;
+}
+/*==========================
+        RESPONSIVE
+===========================*/
+
+@media (max-width: 1100px) {
+  .testimonial-card {
+    min-width: calc((100% - 22px) / 2);
+  }
+
+  .faq-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .location {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-header {
+    grid-template-columns: 45px 1fr 45px;
+  }
+
+  .testimonial-header h2 {
+    font-size: 1.6rem;
+  }
+  .testimonial-card {
+    min-width: 100%;
+  }
+  .faq-left h2 {
+    font-size: 1.6rem;
+  }
+}
