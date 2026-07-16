@@ -1,0 +1,190 @@
+/*=========================
+RESET
+=========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#245813;
+}
+
+/*=========================
+CONTENEDOR
+=========================*/
+
+.contenedor{
+    width:98%;
+    margin:20px auto;
+}
+
+/*=========================
+CABECERA
+=========================*/
+
+.cabecera{
+
+    background:#ff0000;
+
+    border-radius:10px 10px 0 0;
+
+    height:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+    color:white;
+
+}
+
+.cabecera img{
+
+    position:absolute;
+
+    left:12px;
+
+    width:55px;
+
+    height:35px;
+
+    border-radius:4px;
+
+}
+
+.cabecera h2{
+
+    font-size:22px;
+
+    font-weight:normal;
+
+    text-transform:capitalize;
+
+}
+
+/*=========================
+TABLA
+=========================*/
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+}
+
+thead{
+
+    background:#0b6d9a;
+
+    color:white;
+
+}
+
+thead th{
+
+    padding:10px;
+
+    text-align:left;
+
+    border:1px solid #d0d0d0;
+
+}
+
+tbody td{
+
+    padding:10px;
+
+    border:1px solid #d0d0d0;
+
+}
+
+tbody tr:nth-child(odd){
+
+    background:#d9dee5;
+
+}
+
+tbody tr:nth-child(even){
+
+    background:#f2f2f2;
+
+}
+
+tbody tr:hover{
+
+    background:#fff7b2;
+
+}
+
+/*=========================
+BOTON
+=========================*/
+
+.botones{
+
+    margin-top:40px;
+
+}
+
+.botones a{
+
+    display:inline-block;
+
+    background:#156082;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 35px;
+
+    border-radius:3px;
+
+    border:1px solid #08384d;
+
+    transition:.3s;
+
+}
+
+.botones a:hover{
+
+    background:#0b4d67;
+
+}
+
+/*=========================
+RESPONSIVE
+=========================*/
+
+@media(max-width:768px){
+
+    .cabecera h2{
+
+        font-size:18px;
+
+    }
+
+    table{
+
+        font-size:13px;
+
+    }
+
+    thead th,
+    tbody td{
+
+        padding:8px;
+
+    }

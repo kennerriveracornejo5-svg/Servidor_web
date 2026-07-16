@@ -1,0 +1,240 @@
+/*==========================
+RESET
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#bfbfbf;
+}
+
+/*==========================
+HEADER
+==========================*/
+
+.header{
+    width:100%;
+    height:50px;
+    background:#972a94;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 15px;
+    border-bottom:4px solid #d16ad1;
+}
+
+.logo img{
+    width:70px;
+    height:38px;
+    border-radius:4px;
+}
+
+.header h1{
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.recargar{
+    color:white;
+    font-size:25px;
+    cursor:pointer;
+}
+
+/*==========================
+CONTENEDOR
+==========================*/
+
+.contenedor{
+    width:97%;
+    margin:8px auto;
+}
+
+/*==========================
+TARJETAS
+==========================*/
+
+.destino{
+    margin-bottom:10px;
+}
+
+.destino-header{
+
+    background:#ffff00;
+    border:2px solid #4b4b4b;
+    border-radius:10px;
+
+    display:flex;
+    align-items:center;
+
+    min-height:48px;
+
+    padding:5px;
+
+}
+
+/*==========================
+IMAGEN
+==========================*/
+
+.imagen{
+
+    width:85px;
+    height:45px;
+
+    flex-shrink:0;
+
+}
+
+.imagen img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:6px;
+
+}
+
+/*==========================
+TEXTO
+==========================*/
+
+.texto{
+
+    flex:1;
+
+    font-size:11px;
+
+    padding:0 12px;
+
+    color:#000;
+
+}
+
+/*==========================
+BOTON
+==========================*/
+
+.boton{
+
+    width:55px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.boton i{
+
+    width:38px;
+    height:38px;
+
+    border-radius:50%;
+
+    background:#111;
+
+    border:3px solid red;
+
+    color:red;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.boton i:hover{
+
+    transform:scale(1.08);
+
+}
+
+/*==========================
+INFORMACION
+==========================*/
+
+.destino-body{
+
+    display:none;
+
+    background:white;
+
+    border-left:2px solid #4b4b4b;
+    border-right:2px solid #4b4b4b;
+    border-bottom:2px solid #4b4b4b;
+
+    padding:15px;
+
+    font-size:14px;
+
+    line-height:24px;
+
+}
+
+/*==========================
+BOTON VOLVER
+==========================*/
+
+.volver{
+
+    margin:40px 20px;
+
+}
+
+.volver a{
+
+    background:#156082;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 40px;
+
+    border:1px solid #06394d;
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:700px){
+
+.destino-header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.imagen{
+
+    width:240px;
+    height: 140px;
+
+    margin-bottom:10px;
+
+}
+
+.texto{
+
+    padding:10px 0;
+
+}
+
+}

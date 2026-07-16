@@ -1,0 +1,171 @@
+/* ====== ESTILOS GENERALES ====== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+}
+
+/* ===== HEADER ===== */
+
+.main-header{
+    background:#0c5c75;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:15px 30px;
+}
+
+.header-logo{
+    width:90px;
+}
+
+.header-title{
+    font-size:32px;
+    font-weight:bold;
+}
+
+/* ===== CONTENEDOR ===== */
+
+.tours-container{
+    width:95%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+/* ===== TARJETA ===== */
+
+.tour-card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+/* ===== CABECERA ===== */
+
+.tour-header{
+    background:#0c5c75;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+    padding:15px;
+}
+
+.tour-image img{
+    width:170px;
+    height:110px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.tour-title-block{
+    flex:1;
+    padding:0 20px;
+}
+
+.tour-title-block h2{
+    margin-bottom:10px;
+}
+
+.tour-badge{
+    background:#ffffff;
+    color:#0c5c75;
+    padding:8px 12px;
+    border-radius:20px;
+    display:inline-block;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* ===== BOTON ===== */
+
+.toggle-button{
+    width:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+}
+
+.toggle-button i{
+    transition:.35s;
+}
+
+/* ===== DETALLES ===== */
+
+.tour-details{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .5s ease;
+    background:#fff;
+}
+
+.tour-card.active .tour-details{
+    max-height:1200px;
+}
+
+/* ===== CONTENIDO ===== */
+
+.details-inner{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:25px;
+}
+
+.detail-column h3{
+    color:#0c5c75;
+    margin-bottom:10px;
+}
+
+.detail-column ul{
+    padding-left:18px;
+}
+
+.detail-column li{
+    margin-bottom:8px;
+    line-height:1.5;
+}
+
+/* ===== FOOTER ===== */
+
+.main-footer{
+    text-align:center;
+    margin:40px;
+}
+
+.volver-inicio a{
+    background:#0c5c75;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:900px){
+
+.details-inner{
+    grid-template-columns:1fr;
+}
+
+.tour-header{
+    flex-direction:column;
+    text-align:center;
+}
+
+.tour-title-block{
+    padding:15px 0;
+}
+
+}

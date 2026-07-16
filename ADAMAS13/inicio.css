@@ -1,0 +1,214 @@
+/*==========================
+    ESTILOS GENERALES
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#b34410,#d96b27);
+}
+
+/*==========================
+    CABECERA
+==========================*/
+
+.cabecera{
+    background:#277e34;
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    border-bottom:4px solid #1c5b27;
+}
+
+.logo{
+    position:absolute;
+    left:20px;
+}
+
+.logo img{
+    width:90px;
+    height:70px;
+    object-fit:contain;
+}
+
+.cabecera h1{
+    color:white;
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+/*==========================
+    HISTORIA
+==========================*/
+
+.historia{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    background:rgb(11, 56, 207);
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 8px 20px hsla(110, 91%, 48%, 0.898);
+}
+
+.historia h2{
+    text-align:center;
+    color:hsl(56, 80%, 45%);
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.historia p{
+    text-align:justify;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+/*==========================
+    MISION Y VISION
+==========================*/
+
+.mision-vision{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.caja{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.caja h2{
+    text-align:center;
+    color:#7e2a27;
+    margin-bottom:15px;
+}
+
+.caja p{
+    text-align:justify;
+    line-height:1.7;
+}
+
+/*==========================
+    FUNDADORES
+==========================*/
+
+.fundadores{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+.fundadores h2{
+    text-align:center;
+    color:rgb(245, 241, 13);
+    font-size:35px;
+    margin-bottom:35px;
+}
+
+.equipo{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.persona{
+    width:300px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.persona:hover{
+    transform:translateY(-8px);
+}
+
+.persona img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.persona h3{
+    text-align:center;
+    margin-top:20px;
+    color:#277e34;
+}
+
+.persona p{
+    text-align:center;
+    margin:15px 20px 25px;
+}
+
+/*==========================
+    BOTON VOLVER
+==========================*/
+
+.volver{
+    text-align:center;
+    margin:40px;
+}
+
+.volver a{
+    display:inline-block;
+    text-decoration:none;
+    background:#277e34;
+    color:white;
+    padding:15px 35px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.volver a:hover{
+    background:#184c21;
+}
+
+/*==========================
+    RESPONSIVE
+==========================*/
+
+@media(max-width:768px){
+
+.cabecera{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+}
+
+.logo{
+    position:static;
+    margin-bottom:10px;
+}
+
+.cabecera h1{
+    font-size:28px;
+}
+
+.mision-vision{
+    grid-template-columns:1fr;
+}
+
+.persona{
+    width:100%;
+}
+
+}
